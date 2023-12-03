@@ -38,6 +38,12 @@ Augmentation Framework for Crystal Property Estimation.
 
 ## Model Training
 The models have been trained on the CIF files from the eight databases.
+To execute the pre-trained model, use the following command:
+```python
+ python silva_train.py
+```
+The parameters for the  model can be modified in the config.yaml
+
 
 ## References 
 
@@ -46,8 +52,3 @@ In this project, we have referred to and utilized the following resources:
 1. https://github.com/txie-93/cdvae - Parts of the code or ideas in this project were based on this.
 2. https://github.com/RishikeshMagar/Crystal-Twins - Parts of the code or ideas in this project were based on this.
 3. https://github.com/topics/graph-isomorphism-network - Parts of the code or ideas in this project were based on this.
-To execute the pre-trained model, use the following command:
-```python
- python silva_train.py
-```
-The parameters for the  model can be modified in the config.yaml
