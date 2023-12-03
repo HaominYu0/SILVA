@@ -1,0 +1,44 @@
+batch_size: 16
+epochs: 350
+eval_every_n_epochs: 1
+log_every_n_steps: 100
+gpu: cuda:0
+random_seed: 3407
+task: 'regression'
+target_dataset: mp_shear
+iter_num: 5
+
+optim:
+  optimizer: Adam
+  #Adam
+  lr: 0.0001
+  lr_fine: 0.0001
+  #0.001
+  momentum: 0.9
+  weight_decay: 0.00001
+  #0.00000001
+  #0.00001
+  #6
+
+model: 
+  atom_fea_len: 64
+  h_fea_len: 64
+  n_conv: 3
+  n_h: 1
+
+dataset:
+  root_dir: /data/cs.aau.dk/haominyu/cdvae/Dataset/MP_DATA_finetest/
+  goal: band_gap
+
+  max_num_nbr: 12
+  radius: 8
+  dmin: 0
+  step: 0.2
+
+
+dataloader:
+  val_ratio: 0.2
+  test_ratio: 0.2
+  num_workers: 0
+
+
