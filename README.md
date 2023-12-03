@@ -1,5 +1,4 @@
 # SILVA
-# CROP
 This is a PyTorch implementation of the paper: A Selective Multi-View Representation
 Augmentation Framework for Crystal Property Estimation.
 `@author:Haomin Yu, Jilin Hu, Chenjuan Guo, Bin Yang`
